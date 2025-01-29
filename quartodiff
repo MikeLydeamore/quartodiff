@@ -9,7 +9,6 @@ newfilename="${1}${RANDOM}"
 git checkout $prevcommit
 
 quarto render $1 --to latex --output ${oldfilename}
-filename
 
 git checkout $curcommit
 
