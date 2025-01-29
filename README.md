@@ -2,6 +2,12 @@
 
 A simple wrapper around git and latexdiff for Quarto Latex documents.
 
+## Installation
+
+Download the `quartodiff` shell script [here](https://raw.githubusercontent.com/MikeLydeamore/quartodiff/refs/heads/main/quartodiff) and place it somewhere on your path.
+
+You will also need `latexmk` on your path, and it's relevant dependencies. `TinyTeX` can do this but sometimes it goes a bit funky.
+
 ## Usage
 
 `quartodiff filename.qmd commit_ref`
