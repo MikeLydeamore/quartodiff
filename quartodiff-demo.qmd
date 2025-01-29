@@ -53,6 +53,19 @@ format:
       cite-style: authoryear
 ---
 
+## Here are some computations
+
+I am using an R chunk here:
+
+```{r}
+#| echo: true
+
+source("demo_function.R")
+
+calculate_average(1, 4)
+
+```
+
 Please make sure that your manuscript follows the guidelines in the 
 Guide for Authors of the relevant journal. It is not necessary to 
 typeset your manuscript in exactly the same way as an article, 
