@@ -1,0 +1,19 @@
+---
+format: gfm
+---
+
+```{r}
+#| include: false
+# Create pdf and png version of template
+library(tidyverse)
+library(quarto)
+library(magick)
+
+# Convert rendered PDF to PNG
+image_read_pdf("diff.pdf", pages = 1) |>
+  image_montage(geometry = "x1000+25+35", tile = 1, bg = "grey92", shadow = TRUE) |>
+  image_convert(format = "png") |>
+  image_write("diff.png")
+```
+
+[](diff.png)
