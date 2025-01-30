@@ -3,8 +3,8 @@
 curcommit=$(git rev-parse --abbrev-ref HEAD)
 prevcommit=$(git rev-parse $2)
 
-oldfilename="${1}${RANDOM}"
-newfilename="${1}${RANDOM}"
+oldfilename="${RANDOM}.tex"
+newfilename="${RANDOM}.tex"
 
 git checkout $prevcommit
 
